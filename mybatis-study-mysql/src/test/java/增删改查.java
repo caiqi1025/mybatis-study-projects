@@ -24,9 +24,6 @@ public class 增删改查 {
 			user.setPassword("123456");
 			user.setNickname("caiqi");
 			int result = session.insert("com.mybatis.demo.UserMapper.addUser", user);
-
-			/*UserMapper userMapper = session.getMapper(UserMapper.class);
-			int result = userMapper.addUser(user);*/
 			System.out.println("返回结果:" + result);
 			/**
 			 * 关闭session
